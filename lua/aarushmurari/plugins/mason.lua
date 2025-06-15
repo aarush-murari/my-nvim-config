@@ -2,7 +2,7 @@
 return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
-	ensure_installed = { "clangd", "lua_ls", "jdtls", "neocmake" },
+	ensure_installed = { "clangd", "lua_ls", "jdtls", "neocmake", "pyright" },
     },
     dependencies = {
         { "mason-org/mason.nvim", opts = {} },
