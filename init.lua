@@ -12,6 +12,7 @@ vim.o.smarttab = true
 vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
+vim.g.lazyvim_prettier_needs_config = false
 
 require("aarushmurari.core")
 require("aarushmurari.lazy")
