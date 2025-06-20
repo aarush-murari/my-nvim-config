@@ -2,8 +2,10 @@ vim.g.mapleader = " "
 
 vim.cmd([[set shellpipe=>%s\ 2>&1]])
 
-vim.opt.number = true
+vim.o.number = true
 
+vim.o.spelllang = 'en_us'
+vim.o.spell = 'true'
 
 vim.o.tabstop = 8
 vim.o.smarttab = true
