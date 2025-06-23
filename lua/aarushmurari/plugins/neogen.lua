@@ -1,5 +1,8 @@
 return { 
     "danymat/neogen", -- for class annotations and shit
     config = true,
-    vim.keymap.set("n", "<leader>cds", "<cmd>Neogen<CR>", { desc = "create doc strong" }),
+    function()
+        local opts = { noremap = true, silent = true },
+        vim.api.nvim_set_keymap("n", "<Leader>nd", function() require('neogen').generate() end, opts)
+    end,
 }
