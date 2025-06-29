@@ -14,5 +14,13 @@ vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.g.lazyvim_prettier_needs_config = false
 
+if vim.g.vscode then
+    local vscode = require("vscode")
+    vim.notify = vscode.notify
+    vim.notify("Entering limited vs-code mode...")
+else
+    vim.notify("No VS Code? Noice...")
+end
+
 require("aarushmurari.core")
 require("aarushmurari.lazy")
