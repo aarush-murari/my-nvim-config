@@ -25,5 +25,13 @@ else
     vim.notify("No VS Code? Noice...")
 end
 
+vim.api.nvim_create_user_command(
+    "EditConfig",
+    function(opts)
+        vim.cmd.edit(vim.fn.stdpath("config"))
+    end,
+    {}
+)
+
 require("aarushmurari.core")
 require("aarushmurari.lazy")
