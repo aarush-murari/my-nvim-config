@@ -13,6 +13,9 @@ vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.g.lazyvim_prettier_needs_config = false
+if type(vim.g.clipboard) == nil then
+    vim.g.clipboard = "wl-copy"
+end
 
 if vim.g.vscode then
     local vscode = require("vscode")
