@@ -1,4 +1,5 @@
 {
+  "AnsiEsc.vim": { "branch": "master", "commit": "d2bb7878622e4c16203acf1c92a0f4bc7ac58003" },
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
   "LuaSnip": { "branch": "master", "commit": "458560534a73f7f8d7a11a146c801db00b081df0" },
   "clangd_extensions.nvim": { "branch": "main", "commit": "b67cc417d9020fb4b83d46662351b4d16894905e" },
